@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* --------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.gallery {
+  width: 1128px;
+  height: 200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.gallery img {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery img:hover {
+  transform: scale(1.086);
+  transition: transform 0.3s ease;
